@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(179, 205, 205);
+    margin: 0;
+    padding: 0;
+}
+
+.sec{
+    margin: 50px;
+   display: flex;
+   justify-content: space-around;
+  
+}
+.image{
+    height: 200px;
+    width: 200px;
+}
+.bt{
+    border-radius: 14px;
+    background-color: red;
+    color: white;
+}
