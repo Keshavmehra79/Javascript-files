@@ -70,15 +70,51 @@
 //     for(let b=1;b<=10;b++){
 //         console.log(a*b)
 //     }
+//..........................STAR PATTERN...................
+// for(let a=1;a<=5;a++){
+//     for(let b=1;b<=5;b++){
+//         if(b<=a){
+//         document.write("*",)
+//     }
+//     else{
+//         document.write(" ",)
+//     }
+// }
+//     document.write("<br>")
+
 // }
 
-for(let a=1;a<=5;a++){
-    for(let a=1;a<=5;a++){
-        if(a>=1){
-        document.write("*"," ")
+////////////Q2
+// let row=5
+// let col=5
+// for(let col=1;col<=5;col++){
+//       document.write("*")
+
+//    for(let row=1;row<=5;row++){
+//     if(col==1 || col==5 ){
+//         document.write("*")
+//     }
+   
+//     else{
+//         document.write(" ")
+//     }    
+  
+       
+// }
+//     document.write("<br>")
+
+// }
+for(let r=1;r<=5;r++){
+    for(let c=1;c<=5;c++){
+        if(r==1 || r==5 || c==1 ||c==5){
+            document.write("*")
+        }
+        else{
+            document.write("&nbsp&nbsp")
+        }
     }
-    else{
-        document.write(" ")
-    }
+    document.write("<br>")
 }
-}
+
+
+
