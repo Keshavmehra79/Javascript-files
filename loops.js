@@ -104,17 +104,51 @@
 //     document.write("<br>")
 
 // }
+// for(let r=1;r<=5;r++){
+//     for(let c=1;c<=5;c++){
+//         if(r==1 || r==5 || c==1 ||c==5){
+//             document.write("*")
+//         }
+//         else{
+//             document.write("&nbsp&nbsp")
+//         }
+//     }
+//     document.write("<br>")
+// }
+
+// let n=parseInt(prompt("Enter Number"))
+// for(let i=1;i<=10;i++){
+//     document.write(n*i," <br>")
+// }
+// let n=parseInt(prompt("Enter Number"))
+// let rev=0
+// while(n>0){
+//     let digit=n%10
+//     rev=rev*10+digit
+//     n=Math.floor(n/10)
+// }
+// document.write(rev)
+// let count=0
+// for(let i=1;i<n+1;i++){
+//     if(n%i==0){
+//         count++
+//     }
+// }
+// if(count==2){
+//     document.write("Prime")
+// }
+// else{
+//     document.write("Not Prime!")
+// }
 for(let r=1;r<=5;r++){
     for(let c=1;c<=5;c++){
-        if(r==1 || r==5 || c==1 ||c==5){
-            document.write("*")
-        }
+        if(r==1 || r==3 || r==5){
+document.write("*"," ")        }
+        else if(r==2 && c==1 || r==4 && c==1){
+document.write("*"," ")        }
         else{
-            document.write("&nbsp&nbsp")
+            document.write(" ")
         }
     }
     document.write("<br>")
 }
-
-
-
