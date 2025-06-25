@@ -54,3 +54,6 @@
 // let el=parseInt(prompt("Enter number of el"))
 // ar1.splice(idx,el)
 // console.log(ar1)
+
+
+
