@@ -37,4 +37,15 @@
 
 
 //wap print only one key of top
+let obj={
+naMe:"keshav",
+city:"bhopal",
+no:1234
+}
+
+for(let vl in obj){
+    if(obj[vl]=="keshav")
+    document.write(vl)
+}
+
 
