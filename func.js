@@ -93,21 +93,38 @@
 
 
 // wap to take three i/p from the user & print multiplication table using type 3  with argu and return
-function table(a){
-  t=[];
-  for(let i=1;i<=10;i++){
-    t.push(i*a)
-  }
-  return t;
+// function table(a){
+//   t=[];
+//   for(let i=1;i<=10;i++){
+//     t.push(i*a)
+//   }
+//   return t;
+// }
+// let n1=parseInt(prompt("Enter first number"))
+// document.write(table(n1),"<br>")
+
+// let n2=parseInt(prompt("Enter sec number"))
+// document.write(table(n2),"<br>")
+
+// let n3=parseInt(prompt("Enter third number"))
+// document.write(table(n3),"<br>")
+function tables(n,i){
+  return n*i;
 }
-let n1=parseInt(prompt("Enter first number"))
-document.write(table(n1),"<br>")
+let i=1
+let a=parseInt(prompt("Enter first number"))
+  let b=parseInt(prompt("Enter sec number"))
+  let c=parseInt(prompt("Enter third number"))
 
-let n2=parseInt(prompt("Enter sec number"))
-document.write(table(n2),"<br>")
 
-let n3=parseInt(prompt("Enter third number"))
-document.write(table(n3),"<br>")
+
+while(i<=10){
+document.write(tables(a,i)," ")
+ document.write(tables(b,i)," ")
+ document.write(tables(c,i)," ")
+document.write("<br>")
+  i++;
+}
 
 
 
