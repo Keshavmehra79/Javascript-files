@@ -52,3 +52,18 @@
 // else{
 //     console.log("your are underage")
 // }
+
+for(let r=1;r<=5;r++){
+    for(let c=1;c<=5;c++){
+        if(r==1 || r==3 || r==5){
+            document.write("*"," ")
+        }
+        else if(r==2 && c==1 ){
+            document.write("*"," ")
+        }
+        else{
+            document.write(" ")
+        }
+    }
+    document.write("<br>")
+}
