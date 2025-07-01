@@ -33,5 +33,7 @@ img.style.border_Radius="50%"
 let h22=document.getElementById("h22")
 h22.setAttribute('align','center')
 h22.removeAttribute('style')
+let a=document.getElementById('head1')
+a.innerHTML="<i> Hy Guys,I am keshva</i>"
 
 
