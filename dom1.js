@@ -46,9 +46,21 @@ function color(a){
 }
 
 
-function add(a){
-    count=1
+//////////////task///////////
+ let count=0
+function counter(a){
     let h1=document.getElementById('task')
-    h1.textContent=count 
-    count++
+    if(a=='+'){
+        count++
+        h1.textContent=count
+     
+    }
+   
+     
+    else{
+        if(count>0){
+            count--
+        h1.textContent=count
+}
+    }
 }

@@ -1,36 +1,38 @@
-// let h1=document.getElementById('h1')
-// h1.style.color="red";
-// h1.style.backgroundColor="green"
+function fun(){
+    alert("You clicked inside the input box")
+}
 
-// let h2=document.getElementById("h2")
-// h2.style.color="blue"
-// h2.style.fontSize="30px"
+function para(){
+let para=document.getElementById('para')
+para.style.color="red"
+}
 
-// let h3=document.getElementById('h3')
-// h3.innerHTML="<i>"+h3.innerHTML+"</i>"
+function dbl(){
+    let dbl=document.getElementById('para2')
+    dbl.textContent="you double clicked me!"
+}
 
-// // 2)
-// let img=document.getElementById('image')
-// img.src="kkkk.jpg"
-// img.style.width="200px"
-// img.style.borderRadius="50%"
+function change(){
+    let change=document.getElementById('img')
+    change.src='img.jpg'
+}
+function chnageback(){
+    let chnageback=document.getElementById('img')
+    chnageback.src='nature way.jpg'
+}
 
-// 3)
-// let para=document.getElementById('para')
-// para.removeAttribute('style')
-// para.style.textAlign="center"
+function color(a){
+    document.body.style.backgroundColor=a
+}
 
-// let div=document.getElementById('container')
-// div.innerHTML="<b> Hello</b>,<i> This is a dom practice task!</i>"
-
-
-let h1=document.getElementById('head1')
-h1.textContent="Wellcome to my page"
-
-let p=document.getElementById('para')
-p.style.backgroundColor="yellow"
-p.innerHTML="<b> Hello i am your fan</b>"
-
-let img=document.getElementById('img')
-img.src="img.jpg"
-img.style.width="100%"
+function btn(a){
+   let h1=document.getElementById('head2')
+   if(h1.textContent=='hello'){
+    h1.textContent='goodbye'
+    h1.style.color='green'
+   }
+   else{
+    h1.textContent='hello'
+    h1.style.color='blue'
+   }
+    }
