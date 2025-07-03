@@ -50,17 +50,20 @@ function color(a){
  let count=0
 function counter(a){
     let h1=document.getElementById('task')
-    if(a=='+'){
+    if(a=='+' ){
         count++
         h1.textContent=count
-     
     }
-   
-     
     else{
         if(count>0){
             count--
-        h1.textContent=count
+        h1.textContent=count        
 }
-    }
+}
+ if(count%2!=0){
+    h1.style.color="red"
+ }
+ else {
+    h1.style.color="black"
+ }
 }

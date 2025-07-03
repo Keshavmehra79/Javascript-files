@@ -16,7 +16,7 @@
 //////////////////task1
 let ul=document.querySelectorAll('li')
 for(let vl in ul){
-    // console.log(vl)  why print entries
+    console.log(vl)  
     if(vl%2!=0){
         ul[vl].style.color="yellow"
     }
