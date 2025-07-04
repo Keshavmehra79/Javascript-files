@@ -6,20 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-     <input type="text" onclick="fun()">
-     <p id="para">Hy I am keshav</p>
-     <button onclick="para()"> Click me</button>
-     <p id="para2">Lorem ipsum dolor sit amet.</p>
-     <button ondblclick="dbl()">Double click</button>
-     <img src="nature way.jpg" alt="" width="400px" id="img">
-     <button onmouseenter="change()" onmouseleave="chnageback()" align="center"> change</button>
-
-     <button onclick="color('green')">Green</button>
-     <button onclick="color('yellow')">yellow</button>
-     <button onclick="color('red')">Red</button>
-
-    <h2 id="head2">Hello</h2>
-    <button onclick="btn()" >Click me </button>
+     <form action="" onsubmit="return validate()">
+        <label for="">Name</label>
+        <input type="text" placeholder="Please enter your name" id="name"><br><br>
+         <label for="">City</label>
+        <input type="text" placeholder="Please enter your city" id="city"><br><br>
+         <label for="">contact</label>
+        <input type="text" placeholder="Please enter your name" id="contact"><br><br>
+         <label for="">Age</label>
+        <input type="text" placeholder="Please enter your age" id="age"><br><br>
+    
+        <input type="submit">
+     </form>
 
     <script src="practice.js"></script>
 </body>

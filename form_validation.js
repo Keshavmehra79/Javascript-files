@@ -1,8 +1,10 @@
 function validate(){
     let name=document.querySelector('#name').value
     let city=document.querySelector('#city').value
-let contact=document.querySelector('#contact').value
+    let contact=document.querySelector('#contact').value
     let age=document.querySelector('#age').value
+    
+    
 
     if(name==""){
         alert("Please Enter your name")
@@ -10,35 +12,34 @@ let contact=document.querySelector('#contact').value
         return false
     }
     else if(city==""){
-        alert("Please enter your city")
+        alert("Please Enter your city")
         document.querySelector('#city').focus()
         return false
     }
     else if(contact==""){
-        alert("Please Enter your contact")
-        document.querySelector('#contact').focus()
-        return false
-    }
-      else if(isNaN(contact)){
-         alert("Please Enter your valid  mobile number")
+        alert("please enter your contact")
         document.querySelector('#contact').focus()
         return false
     }
     else if(contact.length>10 || contact.length<10){
-        alert("Please Enter your 10 digits mobile number")
+         alert("please enter 10 digits contact")
         document.querySelector('#contact').focus()
         return false
     }
-  
-       else if(isNaN(age)){
-        alert("Please Enter your valid age")
+    else if(isNaN(contact)){
+        alert("Please enter valid contact")
+        document.querySelector('#contact').focus()
+        return false
+    }
+    else if(age.length>3 || age==""){
+        alert("Please enter your valid age")
         document.querySelector('#age').focus()
         return false
     }
-    else if(age=='' || age.length>3){
-             alert("Please Enter your Age in 2 or 3 digit")
+    else if(isNaN(age)){
+        alert("Please enter valid age")
         document.querySelector('#age').focus()
         return false
     }
- 
+
 }
