@@ -3,7 +3,8 @@ function validate(){
     let city=document.querySelector('#city').value
 let contact=document.querySelector('#contact').value
     let age=document.querySelector('#age').value
-
+    let email=document.querySelector('#email').value
+    let password=document.querySelector('#password').value
     if(name==""){
         alert("Please Enter your name")
         document.querySelector('#name').focus()
@@ -40,5 +41,31 @@ let contact=document.querySelector('#contact').value
         document.querySelector('#age').focus()
         return false
     }
+    else if(email==""){
+        alert("Enter your Email")
+        document.querySelector('#email').focus()
+        return false
+    }
+    else if(!(email.includes('@'))){
+        alert("Enter your Email with @")
+        document.querySelector('#email').focus()
+        return false
+    }
+    else if(!(email.includes('gmail.com') || email.includes('yahoo.com'))){
+        alert("Enter your valid Email")
+        document.querySelector('#email').focus()
+        return false
+    }
+    else if(password==""){
+        alert("Please enter your password")
+        document.querySelector('#password').focus()
+        return false
+    }
+    else if(!(password.match(/['#%^~&*!@']/))){
+        alert("Wrong Password!Please enter your correct password")
+        document.querySelector('#password').focus()
+        return false
+    }
+
  
 }
