@@ -12,7 +12,7 @@ let emp= [
 // let slice=emp.slice(2,3)
 // console.log(slice)
 
-// let newarray=emp.map((e)=> {return e})
+// let newarray=emp.map((e)=> {return e}) //map function return each el of an array(iterable) & insert in(gives new array) new array
 // console.log(newarray);
 let newarray=emp.filter((e)=> {return e.age>20 && e.age<40})
 console.log(newarray);
