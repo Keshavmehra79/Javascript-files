@@ -1,15 +1,18 @@
 let btn=document.querySelector('.btn')
 btn.addEventListener('click',()=>{
-    if(btn=='dark'){
     let a=document.body
-    a.classList.toggle('main')
-    btn.textContent="light"
-}
-
-    else{
-         let b=document.body
-    b.classList.toggle('sec')
-    btn.textContent='dark'
+   if(btn.textContent=='Dark'){
+    a.classList.add('main')
+    btn.textContent='Light'
+   }
+    else if(btn.textContent=='Light'){
+    a.classList.remove('main')
+        btn.textContent='Dark'
     }
+    // else{
+    // a.classList.remove('main')
+    //     btn.textContent='Dark'
+    // }
+
 
 })
