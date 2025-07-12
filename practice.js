@@ -1,103 +1,66 @@
-//ques1
-//     let sum=0
-//     let arr=[]
+function signdata(){
+    let obj={
+        name:document.querySelector('#name').value,
+        email:document.querySelector('#email').value,
+        contact:document.querySelector('#contact').value,
+        password:document.querySelector("#password").value
 
-//     let a=parseInt(prompt("Enter 1 number:"))
-//     if(a%2!=0){
-//         sum+=a
-//     }
-//     let b=parseInt(prompt("Enter 2 number:"))
-//     if(b%2!=0){
-//         sum+=b
-//     }
-//     let c=parseInt(prompt("Enter 3 number:"))
-//     if(c%2!=0){
-//         sum+=c
-//     }
-//     let d=parseInt(prompt("Enter 4 number:"))
-//     if(d%2!=0){
-//         sum+=d
-//     }
-//     let e=parseInt(prompt("Enter 5 number:"))
-//     if(e%2!=0){
-//         sum+=e
-//     }
-//     let f=parseInt(prompt("Enter 6 number:"))
-//     if(f%2!=0){
-//         sum+=f
-//     }
-//     let g=parseInt(prompt("Enter 7 number:"))
-//     if(g%2!=0){
-//         sum+=g
-//     }
-//     let h=parseInt(prompt("Enter 8 number:"))
-//     if(h%2!=0){
-//         sum+=h
-//     }
-//     let i=parseInt(prompt("Enter 9 number:"))
-//     if(i%2!=0){
-//         sum+=i
-//     }
-//     let j=parseInt(prompt("Enter 10 number:"))
-//     if(j%2!=0){
-//         sum+=j
-//     }
-
-
-// arr.push(sum)
-// console.log(arr[0]);
-
-//ques2
-function form(){
-    let name=document.querySelector('#name').value
-    let age=document.querySelector('#age').value
-    let city=document.querySelector('#city').value
-    let password=document.querySelector('#password').value
-    if(name==""){
-        alert("Please Enter your name")
+    }
+    if(obj.name==""){
+        alert("Please Enter your Name")
         document.querySelector('#name').focus()
-
         return false
     }
-    else if(age==""){
-        alert("Please enter your age")
-        document.querySelector('#age').focus()
+    else if(obj.email==""){
+        alert("Please Enter your Email")
+        document.querySelector('#email').focus()
         return false
     }
-    else if(age.length>3){
-        alert("Please enter your valid age")
-        document.querySelector('#age').focus()
+    else if(!(obj.email.includes('@'))){
+        alert("Please Enter your valid Email")
+        document.querySelector('#email').focus()
         return false
     }
-    else if(city==""){
-        alert("Please enter your city")
-        document.querySelector('#city').focus()
+    else if(!(obj.email.includes('@gmail.com') || obj.email.includes('@yahoo.com'))){
+        alert("Please Enter your Correct Email")
+        document.querySelector('#email').focus()
         return false
     }
-     else if(password==""){
-        alert("Please enter your password")
+    else if(obj.contact==""){
+        alert("Please Enter your  Contact")
+        document.querySelector('#contact').focus()
+        return false
+    }
+    else if(obj.contact.length!=10){
+        alert("Please Enter your 10 digit contact")
+        document.querySelector('#contact').focus()
+        return false
+    }
+    else if(obj.password==""){
+        alert("Please make your valid Password")
         document.querySelector('#password').focus()
         return false
     }
-    else if(!(password.match(/[@#$%^&*]/))){
-        alert("Please enter your correct password")
+    else if(!(obj.password.match(/[@#$%^&*]/))){
+        alert("Please make your Strong Password")
         document.querySelector('#password').focus()
         return false
     }
-
+    localStorage.setItem('Data',JSON.stringify(obj))
 }
 
-//ques3
-// let a=parseInt(prompt('Enter number'))
-// a+=5
-// if(a>0){
-//     console.log("Correct");
-    
-// }
-// a-=5
-// if(a>=0){
-//     console.log("Correct")
-// }
+let fetched=JSON.parse(localStorage.getItem('Data'))
+console.log(fetched);
 
-//Ques4
+function loginCheck(){
+    let obj2={
+        email:document.querySelector("#logemail").value,
+        password:document.querySelector("#lpass").value
+    }
+    if(obj2.email!=fetched.email || obj2.password!=fetched.password){
+        alert("User not found")
+        return false
+    }
+}
+
 
