@@ -1,0 +1,13 @@
+let date2=new Date()
+let dt=document.querySelector('#date')
+dt.textContent=date2.getDate()
+let day1=document.querySelector('#day')
+let ar=['sun','monday','tue','wed','thurs','fri','sat']
+let day2=date2.getDay()
+day1.textContent=ar[day2]
+let m=document.querySelector('#month')
+let c=['jan','feb','mar','apr','may','jun','july','Aug','Sep','oct','nov','Dec']
+let m2=date2.getMonth()
+m.textContent=c[m2]
+let y=document.querySelector("#year")
+y.textContent=date2.getFullYear()

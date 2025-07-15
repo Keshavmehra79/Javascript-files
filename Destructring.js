@@ -1,7 +1,7 @@
 
 let [name,num,city]=["cybrom",18,"bhopal"]
 console.log(num);
-
+//crud operation -todo list
 //spread operator
 let ar1=["Goggle","Azure"]
 let ar2=["amazon","flip"]

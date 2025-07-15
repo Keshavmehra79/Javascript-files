@@ -1,18 +1,20 @@
-// let [name,age,city]=['keshav',22,"bhopal"]
-// console.log(age);
+let date=new Date()
+console.log(date);
+console.log(date.getFullYear());
+console.log(date.getDate());
+console.log(date.getMonth()+1);
+console.log(date.getFullYear());
+console.log(date.getDay()+1);
+console.log(date.getFullYear());
+console.log(date.toLocaleDateString());
+console.log(date.toLocaleTimeString());
 
-// let ar1=['keshav',22,"bhopal"]
-// let ar2=['naeem',23,"indore"]
-// let ar3=[...ar1,...ar2,"ar3","ar4"]
-// ar3=[...ar3]
-// console.log(ar3);
+let a=['sun','mon','tue','wed','thurs','fri','sat']
+let b=date.getDay()
+console.log(a[b])
 
-let ob={n:1,m:2}
-let ob1={n2:2,m2:3}
-let ob2={...ob,...ob1,age:22}
-ob2={...ob2}
-console.log(ob2);
-
+let c=['jan','feb','mar','apr','may','jun','july','Aug','Sep','oct','nov','Dec']
+console.log(c[date.getMonth()])
 
 
 
