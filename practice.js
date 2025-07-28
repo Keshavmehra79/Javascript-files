@@ -14,12 +14,12 @@
 // setInterval(()=>{
 //     document.querySelector('#increse').innerHTML=count++
 // },200)
-// setInterval(()=>{
-//     let time=new Date()
-//     let h1=time.toLocaleTimeString()
-//     document.querySelector('#time').innerHTML=h1
+setInterval(()=>{
+    let time=new Date()
+    let h1=time.toLocaleTimeString()
+    document.querySelector('#time').innerHTML=h1
 
-// },1000)
+},1000)
 
 // let c=0
 // let st
