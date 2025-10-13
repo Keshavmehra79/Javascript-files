@@ -7,7 +7,7 @@
 // console.log(Math.min(2,3,5));
 
 let pi=Math.PI
-console.log(Math.trunc(pi));
+// console.log(Math.trunc(pi));
 console.log(Math.trunc((Math.random()*9)+1));
 
 
