@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+            var stopdata;
+            function show(){
+                document.getElementById("demo").innerHTML+="Wellcome to my web!";
+            }
+
+            function display(){
+               stopdata=setInterval(show,1000)
+             
+            }
+
+            function stop(){
+                clearInterval(stopdata)
+            }
+        </script>
+</head>
+<body>
+    
+        <h1 id="demo">Happy Birthday:</h1>
+        <button onclick="display()">Click me</button>
+        <button onclick="stop()">Stop</button>
+</body>
+</html>

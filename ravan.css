@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background */
+
+body > img:first-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Ram Section */
+
+body > div:first-of-type{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+}
+
+/* Arrow */
+
+body > div:first-of-type img:first-child{
+    
+    position: absolute;
+    width: 100px;
+    left: 80px;
+    top: 50px;
+}
+
+body > div:first-of-type img:first-child:hover{
+        cursor: pointer;
+}   
+
+
+
+
+/* Ram */
+
+body > div:first-of-type img:last-child{
+    width: 220px;
+}
+
+/* Ravan Section */
+
+#ravan{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ravan Head */
+
+#ravan img:first-child{
+    width: 250px;
+    margin-bottom: -5px;
+}
+
+/* Ravan Body */
+
+#ravan img:last-child{
+    width: 320px;
+}
+
+/* Optional Shadow */
+
+#ravan img,
+body > div:first-of-type img{
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,.5));
+}
+
+
+body > div:first-of-type img:first-child{
+    position: absolute;
+    left: 130px;
+    top: 60px;
+    width: 120px;
+    transition: 1s linear;
+}
+
+#ram{
+    margin-bottom: 250px;
+}
+
+
+#head{
+    width: 250px;
+    display: block;
+    transition: all .7s ease;
+    transform-origin: center bottom;
+}
+
+#body{
+    width: 320px;
+    display: block;
+    margin-top: -1px;
+}
+
+/* Head cut animation */
+
+.cut{
+    transform: translate(80px,-70px) rotate(35deg);
+    opacity: .8;
+}
