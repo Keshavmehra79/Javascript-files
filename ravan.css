@@ -1,118 +1,107 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
 }
 
 /* Background */
 
-body > img:first-child{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+#bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
 }
 
-/* Ram Section */
+/* ---------------- RAM ---------------- */
 
-body > div:first-of-type{
-    position: absolute;
-    bottom: 40px;
-    left: 100px;
+#ram{
+    position:absolute;
+    left:5%;
+    bottom:40%;
+}
+
+#ramImg{
+    width:220px;
 }
 
 /* Arrow */
 
-body > div:first-of-type img:first-child{
-    
-    position: absolute;
-    width: 100px;
-    left: 80px;
-    top: 50px;
+#arrow{
+    position:absolute;
+
+    width:120px;
+
+    /* Ram ke bow ke paas */
+    left:85px;
+    top:55px;
+
+    cursor:pointer;
+    transition:transform 1s linear;
 }
 
-body > div:first-of-type img:first-child:hover{
-        cursor: pointer;
-}   
-
-
-
-
-/* Ram */
-
-body > div:first-of-type img:last-child{
-    width: 220px;
-}
-
-/* Ravan Section */
+/* ---------------- RAVAN ---------------- */
 
 #ravan{
-    position: absolute;
-    bottom: 20px;
-    right: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position:absolute;
+    right:5%;
+    bottom:5%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
-
-/* Ravan Head */
-
-#ravan img:first-child{
-    width: 250px;
-    margin-bottom: -5px;
-}
-
-/* Ravan Body */
-
-#ravan img:last-child{
-    width: 320px;
-}
-
-/* Optional Shadow */
-
-#ravan img,
-body > div:first-of-type img{
-    filter: drop-shadow(0 8px 12px rgba(0,0,0,.5));
-}
-
-
-body > div:first-of-type img:first-child{
-    position: absolute;
-    left: 130px;
-    top: 60px;
-    width: 120px;
-    transition: 1s linear;
-}
-
-#ram{
-    margin-bottom: 250px;
-}
-
 
 #head{
-    width: 250px;
-    display: block;
-    transition: all .7s ease;
-    transform-origin: center bottom;
+    width:240px;
+    margin-bottom:-10px;
+
+    transition:.7s;
+    transform-origin:center bottom;
 }
 
-#body{
-    width: 320px;
-    display: block;
-    margin-top: -1px;
+#bodyImg{
+    width:320px;
 }
 
-/* Head cut animation */
+/* Head Cut */
 
 .cut{
-    transform: translate(80px,-70px) rotate(35deg);
-    opacity: .8;
+    transform:translate(80px,-70px) rotate(35deg);
+    opacity:.8;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:768px){
+
+    #ramImg{
+        width:130px;
+    }
+
+    #arrow{
+        width:70px;
+        left:80px;
+        top:35px;
+    }
+
+    #head{
+        width:140px;
+    }
+
+    #ravan{
+        bottom:22%
+    }
+
+    #bodyImg{
+        width:180px;
+    }
 }
