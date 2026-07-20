@@ -1,0 +1,18 @@
+{
+  "student": [
+    {
+      "id": "d2df",
+      "name": "Sachin Gadwal",
+      "age": "21",
+      "city": "bagpipariya",
+      "fees": "2345"
+    },
+    {
+      "id": "e076",
+      "name": "Sachin Gadwal",
+      "age": "22",
+      "city": "Bhopal",
+      "fees": "120000"
+    }
+  ]
+}
