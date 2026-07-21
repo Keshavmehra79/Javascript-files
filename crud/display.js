@@ -20,8 +20,10 @@ async function display(){
                 <td>${key.city}</td>
                 <td>${key.fees}</td>
                 <td>
-                <button onclick="deleteData('${key.id}')">Delete</button>
+                <a href="" onclick="deleteData('${key.id}')">Delete</a>
                 </td>
+                <td>
+                <a href="update.html" onclick="editData('${key.id}')">Edit</a></td>
             </tr>`;
         });
 
