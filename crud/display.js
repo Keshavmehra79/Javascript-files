@@ -1,7 +1,6 @@
 async function display(){
     let response=await fetch('http://localhost:3000/student')
     let Data=await response.json()
-    console.log(Data)
     let ans=`<table border="1">
     <tr>
     <th>Name</th>
@@ -20,17 +19,27 @@ async function display(){
                 <td>${key.city}</td>
                 <td>${key.fees}</td>
                 <td>
-                <a href="" onclick="deleteData('${key.id}')">Delete</a>
+                <a href="# " onclick="deleteData('${key.id}')">Delete</a>
                 </td>
                 <td>
-                <a href="update.html" onclick="editData('${key.id}')">Edit</a></td>
+                <a href="#" onclick="editData('${key.id}')">Edit</a></td>
             </tr>`;
         });
 
         document.getElementById("demo").innerHTML=ans
 }
-
 display()
+
+
+
+ async function editData(id) {
+    let res = await fetch(`http://localhost:3000/student/${id}`);
+    let data = await res.json();
+    localStorage.setItem("student",JSON.stringify(data))
+    window.location.href="update.html"
+}
+
+
 
 
 async function deleteData(id) {

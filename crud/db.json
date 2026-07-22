@@ -1,25 +1,25 @@
 {
   "student": [
     {
-      "id": "e076",
-      "name": "Sachin Gadwal",
-      "age": "22",
-      "city": "Bhopal",
-      "fees": "120000"
+      "name": "Rani",
+      "age": "27",
+      "city": "barlei",
+      "fees": "12000",
+      "id": "e076"
     },
     {
-      "id": "7cff",
-      "name": "Mohan lal",
-      "age": "23",
-      "city": "nagpur",
-      "fees": "40000"
+      "name": "Gola",
+      "age": "16",
+      "city": "Indore",
+      "fees": "27000",
+      "id": "752d"
     },
     {
-      "id": "752d",
-      "name": "ram Mehara",
-      "age": "34",
-      "city": "reewa",
-      "fees": "34000"
+      "name": "Rohan",
+      "age": "32",
+      "city": "badi",
+      "fees": "32000",
+      "id": "7d9e"
     }
   ]
 }
