@@ -29,4 +29,4 @@
 
 // let func=myfunc(1,2,3)
 // console.log(func.addTwosum())
-
+///////////////////topic smapt////////////
